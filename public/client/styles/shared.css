@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --blue: #3DCD17;
+  --light-blue: #72F350;
+  --dark-blue: #2F9015;
+  --blue-alpha: rgba(76, 162, 53, 0.6);
+  --purple: #070E05;
+  --magenta: #1C201B;
+  --black:#000000;
+  --black2:#212121;
+  --grey:#6B6B6B;
+  --grey2:#909090;
+  --grey3:#BFBFBF;
+  --white:#FFFFFF;
+}
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  
+}
+::-webkit-scrollbar{
+  display: none;
+}

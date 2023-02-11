@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/shared.css" />
+    <link rel="stylesheet" href="./styles/form.css" />
+    <title>dfv</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="./styles/customcomps.css">
+  </head>
+  <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.22.0/axios.min.js"
+      integrity="sha512-m2ssMAtdCEYGWXQ8hXVG4Q39uKYtbfaJL5QMTbhl2kc6vYyubrKHhr6aLLXW4ITeXSywQLn1AhsAaqrJl8Acfg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+  </script>
+
+
+    <div class="globalcon">
+         
+      <!-- message box for alerts -->
+      <div id="mesagebox">
+        <p class="als"></p>
+      </div>
+<!-- end of message boxes -->
+    <!-- laoding -->
+
+    <!-- end loading -->
+  
+      <div class="profile-card">
+        <div class="header">
+          <i id="close-button" class="fa-solid fa-close"></i>
+        </div>
+        <ul>
+          <li ><div id="propic"></div></li>
+          <li id="proname"></li>
+          <li id="progmail"></li>
+          <li id="prodob"></li>
+         </ul>
+        </div>
+        <div class="profile-card11">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+          </div>
+      
+      <div class="container">
+      <div class="menures">
+        <div class="contactabout">
+          <a class="hm" href="form.html">
+           Home
+        </a>  
+          <a class="abs" href="aboutus.html">
+                About us
+            </a>
+            <a class="acs" href="contactus.html">
+                Contact us
+            </a>
+        </div>
+        <i class="fa-solid fa-bars hmmen"></i>
+      </div>
+      <div class="edt">
+        <div class="why-choose-us">
+          <h2 class="section-title">Why Choose Us</h2>
+          <div class="reason-container">
+            <div class="reason">
+              <i class="fas fa-check-circle reason-icon"></i>
+              <p class="reason-text">High-Quality Service</p>
+            </div>
+            <div class="reason">
+              <i class="fas fa-check-circle reason-icon"></i>
+              <p class="reason-text">Experienced Team</p>
+            </div>
+            <div class="reason">
+              <i class="fas fa-check-circle reason-icon"></i>
+              <p class="reason-text">Affordable Prices</p>
+            </div>
+            <div class="reason">
+              <i class="fas fa-check-circle reason-icon"></i>
+              <p class="reason-text">Friendly Support</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <section id="ch1ofform">
+        <header>
+          <h1>DFV</h1>
+        </header>
+
+        <form>
+          <div class="form-control">
+            <input type="number" name="fontSize" id="fontSize" placeholder="font size" />
+          </div>
+          <div class="form-control">
+            <select name="fontStyle" id="fontStyle">
+              <option selected value="normal">Normal</option>
+              <option value="bold">Bold</option>
+              <option value="italic">Italic</option>
+              <option value="underline">Underline</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <input type="text" placeholder="Font Family" id="fontFamily">
+          </div>
+          <div class="form-control">
+            <input type="text" placeholder="Line Spacing" id="lineSpacing">
+          </div>
+          <div class="form-control file-select-con">
+            <label for="doc" class="chose-a-file">Choose a file</label>
+            <input
+              type="file"
+              name="doc"
+              id="doc"
+              accept=".docx, application/msword"
+              hidden="true"
+            />
+          </div>
+          
+          <div class="form-control submit">
+            <p class="fsname"></p>
+          </div>
+
+          <div class="form-control submit uploadbnt">
+            <button type="submit">Upload</button>
+          </div>
+
+
+          <div class="form-control submit downloadfile">
+            <a href="" target="_blank"/>
+            <button type="button">Download</button>
+          </a>
+          </div>
+        </form>
+        <div class="img-con">
+          <div class="left"></div>
+          <!-- <div class="right"></div> -->
+        </div>
+      </section>
+      <div class="logout-con">
+          <button id="logoutBtn">Log out</button>
+      </div>
+    </div>
+  </div>
+    <script src="./navigation.js"></script>
+    <script src="./extra.js"></script>
+    <script src="./home.js"></script>
+  </body>
+</html>

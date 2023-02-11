@@ -1,0 +1,129 @@
+body {
+  background-image: url("/client/assests/imgs/wave.jpg");
+  background-size: fill;
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  overflow-y: scroll;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: #FFFF;
+  overflow-y: scroll;
+}
+
+.abcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ableft-col,
+.abright-col {
+  width: 50%;
+}
+
+.ableft-col {
+  text-align: center;
+}
+
+.ableft-col img {
+  width: 50%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.abright-col {
+  padding: 50px;
+  text-align: left;
+  color: #ffff;
+}
+
+.abright-col p {
+  margin-bottom: 20px;
+}
+.abmncon{
+    overflow-x: hidden;
+    position: relative;
+    top: 50px;
+   }
+   .abmncon h2{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--white);
+   }
+   .abimg{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem;
+   }
+   .abimg img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: fill;
+    overflow: hidden;
+   }
+   .abctextdet{
+    padding: 1rem 1rem;
+
+   }
+   .abkv{
+    margin-bottom: 1rem;
+   }
+   .abkv div{
+    margin-bottom: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .abkv h5{
+    color: var(--white);
+    font-weight: 200;
+   }
+   .abdesc{
+    text-align: justify;
+    color: var(--white);
+    margin-bottom: .5rem;
+   }
+.abskilss div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: .5rem;
+}
+.abskilss i{
+  margin-right: .5rem;
+}
+.abdesc{
+  min-height: 150px;
+  font-weight: 200;
+  /* background-color: rgba(0,0,0,0.4); */
+  background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.4));
+  padding: 1.5rem 1rem;
+  border-radius: .5rem;
+  line-height: 1.2;
+ }
+.aboutusdesc{
+  min-height: 150px;
+  background-color: red;
+}
+.parentabs{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.pabsch1{
+  margin-right: .5rem;
+}

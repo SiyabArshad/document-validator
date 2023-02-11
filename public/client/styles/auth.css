@@ -1,0 +1,150 @@
+.mncontainerbox{
+  position: relative;
+  overflow-y: scroll;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--black2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-page-con,
+.signup-page-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--black2);
+  padding: 0 1rem;
+}
+
+.login-page-con section,
+.signup-page-con section {
+  width: clamp(300px, 850px, 1200px);
+  display: flex;
+  position: relative;
+  background-color: var(--white);
+}
+
+.left,
+.right {
+  flex-basis: 50%;
+}
+
+.right {
+  background: url("/client/assests/imgs/finger.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.signup-page-con .right {
+  background-image: url("/client/assests/imgs/finger.jpg");
+}
+
+.togglePage {
+  /* position: absolute;
+  bottom: 0.5rem;
+  left: 3vw;
+  color: var(--blue); */
+  text-decoration: none;
+}
+.togglePage1{
+  text-decoration: none;
+  margin-top: 1rem;
+  margin-bottom: .3rem;
+  color: var(--black);
+}
+.togglePage2{
+  text-decoration: none;
+  color: var(--black);
+}
+.form-con header h1{
+  color: var(--black2);
+  font-size: 3.5rem;
+  margin-bottom: .5rem !important;
+}
+.form-con header p{
+  color: var(--black) !important;
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+@media (max-width: 500px) {
+  .right {
+    display: none;
+  }
+  .left {
+    flex-basis: 100%;
+    padding-bottom: 3rem;
+  }
+
+  .togglePage {
+    bottom: -0.2rem;
+  }
+}
+
+.left {
+  padding: 5vw 3vw;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  margin-bottom: 3rem;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control input {
+  border-radius: 3px;
+  border: 1px solid var(--grey3);
+  font-size: 1.1rem;
+  padding: 0.5rem 0.7rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.2rem;
+  color: var(--black2);
+}
+
+.form-control input:focus {
+  outline: none;
+  border-color: var(--grey);
+}
+
+.form-control button {
+  background: linear-gradient(to right, var(--purple), var(--magenta));
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin-top: 1.4rem;
+  text-transform: uppercase;
+}
+
+.form-control button:hover {
+  background: linear-gradient(to left, var(--purple), var(--magenta));
+}
+.form-control button:focus {
+  outline: none;
+}
+
+#error {
+  color: red;
+  margin: 0.8rem 0;
+  text-transform: capitalize;
+}
+
+.auth-msg {
+  text-align: center;
+  color: green;
+  margin-top: 0.3rem;
+  opacity: 0;
+  transition: 100ms opacity;
+}
+
+.auth-msg.active {
+  opacity: 1;
+}
